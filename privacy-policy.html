@@ -1,285 +1,302 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="auto">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hydra — Privacy Policy | سياسة الخصوصية</title>
-<style>
-  :root {
-    --bg: #060e1f;
-    --card: #0d2444;
-    --blue: #38b6ff;
-    --text: #f0f9ff;
-    --sub: #94c5e8;
-    --dim: #4d7ea8;
-    --green: #10b981;
-    --border: rgba(56,182,255,0.15);
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
-
-  .header {
-    background: linear-gradient(135deg, #0d2444, #060e1f);
-    border-bottom: 1px solid var(--border);
-    padding: 40px 24px;
-    text-align: center;
-  }
-  .logo { font-size: 2.5rem; margin-bottom: 8px; }
-  .app-name { font-size: 1.8rem; font-weight: 800; color: var(--blue); margin-bottom: 4px; }
-  .page-title { font-size: 1rem; color: var(--sub); }
-  .lang-toggle { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
-  .lang-btn { background: var(--card); border: 1px solid var(--border); color: var(--sub); padding: 6px 20px; border-radius: 20px; cursor: pointer; font-size: 13px; transition: all 0.2s; }
-  .lang-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
-
-  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
-
-  .last-updated { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 18px; margin-bottom: 32px; font-size: 13px; color: var(--dim); }
-
-  h2 { font-size: 1.2rem; font-weight: 700; color: var(--blue); margin: 32px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
-  h2:first-of-type { margin-top: 0; }
-
-  p { color: var(--sub); font-size: 0.95rem; margin-bottom: 14px; }
-
-  ul { list-style: none; margin-bottom: 14px; }
-  ul li { color: var(--sub); font-size: 0.95rem; padding: 5px 0; padding-left: 20px; position: relative; }
-  ul li::before { content: "›"; color: var(--blue); position: absolute; left: 0; }
-
-  .highlight-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; margin: 16px 0; }
-  .highlight-box p { margin: 0; }
-
-  .green-box { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.25); border-radius: 14px; padding: 18px 20px; margin: 16px 0; }
-  .green-box p { color: var(--green); margin: 0; font-size: 0.9rem; }
-
-  .contact-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-top: 32px; text-align: center; }
-  .contact-card h3 { color: var(--blue); font-size: 1rem; margin-bottom: 10px; }
-  .contact-card a { color: var(--blue); text-decoration: none; font-weight: 600; }
-  .contact-card p { margin: 0; font-size: 0.9rem; }
-
-  .rtl { direction: rtl; text-align: right; }
-  .rtl ul li { padding-left: 0; padding-right: 20px; }
-  .rtl ul li::before { left: auto; right: 0; }
-
-  .section { display: none; }
-  .section.active { display: block; }
-
-  footer { text-align: center; padding: 24px; color: var(--dim); font-size: 12px; border-top: 1px solid var(--border); }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydra — Privacy Policy · سياسة الخصوصية</title>
+  <style>
+    :root { --blue: #38b6ff; --bg: #0a1628; --card: #0d2444; --text: #f0f9ff; --dim: #94c5e8; --green: #10b981; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
+    .container { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+    header { text-align: center; padding: 48px 0 32px; border-bottom: 1px solid rgba(56,182,255,0.15); margin-bottom: 40px; }
+    header .drop { font-size: 52px; }
+    header h1 { font-size: 28px; font-weight: 800; color: var(--blue); margin: 8px 0 4px; }
+    header p { color: var(--dim); font-size: 14px; }
+    .lang-switch { display: flex; gap: 10px; justify-content: center; margin-top: 16px; }
+    .lang-switch a { color: var(--blue); background: var(--card); padding: 6px 18px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600; }
+    .lang-switch a:hover { background: var(--blue); color: #fff; }
+    .badge { display: inline-block; background: rgba(56,182,255,0.1); border: 1px solid rgba(56,182,255,0.25); border-radius: 12px; padding: 10px 16px; font-size: 13px; color: var(--blue); margin-bottom: 28px; }
+    .callout { background: var(--card); border-left: 4px solid var(--green); border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 20px 0; font-size: 14px; color: var(--dim); }
+    .callout.warn { border-left-color: #f59e0b; }
+    .callout.blue { border-left-color: var(--blue); }
+    h2 { font-size: 18px; font-weight: 700; color: var(--blue); margin: 36px 0 12px; }
+    p, li { font-size: 15px; color: var(--dim); margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th { background: var(--card); color: var(--blue); padding: 10px 14px; text-align: left; border-bottom: 1px solid rgba(56,182,255,0.2); }
+    td { padding: 10px 14px; border-bottom: 1px solid rgba(56,182,255,0.08); color: var(--dim); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .section-en, .section-ar { margin-bottom: 60px; }
+    .section-ar { direction: rtl; text-align: right; }
+    .section-ar h2 { text-align: right; }
+    .section-ar th { text-align: right; }
+    .divider { border: none; border-top: 1px solid rgba(56,182,255,0.15); margin: 60px 0; }
+    footer { text-align: center; color: var(--dim); font-size: 12px; padding-top: 20px; border-top: 1px solid rgba(56,182,255,0.1); }
+    a { color: var(--blue); }
+  </style>
 </head>
 <body>
-
-<!-- Header -->
-<div class="header">
-  <div class="logo">💧</div>
-  <div class="app-name">Hydra</div>
-  <div class="page-title">Privacy Policy · سياسة الخصوصية</div>
-  <div class="lang-toggle">
-    <button class="lang-btn active" onclick="switchLang('en')">English</button>
-    <button class="lang-btn" onclick="switchLang('ar')">العربية</button>
-  </div>
-</div>
-
 <div class="container">
+  <header>
+    <div class="drop">💧</div>
+    <h1>Hydra</h1>
+    <p>Privacy Policy · سياسة الخصوصية</p>
+    <div class="lang-switch">
+      <a href="#english">English</a>
+      <a href="#arabic">العربية</a>
+    </div>
+  </header>
 
-  <!-- ═══ ENGLISH ═══════════════════════════════════════ -->
-  <div id="section-en" class="section active">
+  <!-- ═══════════════════════════════════════════ ENGLISH ═══ -->
+  <div class="section-en" id="english">
+    <p class="badge">📅 Last updated: July 2026 · Effective date: July 2026</p>
 
-    <div class="last-updated">📅 Last updated: June 2026 · Effective date: June 2026</div>
-
-    <div class="green-box">
-      <p>✅ <strong>The short version:</strong> Hydra stores your data only on your device. We don't have user accounts, we don't have servers that store your personal data, and we never sell or share your data with advertisers.</p>
+    <div class="callout">
+      ✅ <strong>The short version:</strong> Hydra processes your data locally on your device. We also collect a small amount of optional contact information (email or phone) in a secure cloud database solely to identify you across devices. We never sell or share your personal data with advertisers.
     </div>
 
     <h2>1. Who We Are</h2>
-    <p>Hydra ("we", "us", "our") is a hydration tracking app built for Arabic-speaking users. This Privacy Policy explains what information Hydra accesses and how it's used when you use the Hydra mobile application.</p>
-    <p>If you have questions, contact us at: <strong>obadah.mheidat@gmail.com</strong></p>
+    <p>Hydra ("we", "us", "our") is a hydration tracking app built for Arabic-speaking users. This Privacy Policy explains what information Hydra accesses and how it is used when you use the Hydra mobile application.</p>
+    <p>If you have questions, contact us at: <a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a></p>
 
     <h2>2. Information We Collect</h2>
-    <p>Hydra does not require an account and does not collect any information on remote servers. All information stays on your device.</p>
 
-    <p><strong>Information you provide (stored on your device only):</strong></p>
+    <p><strong>Information stored on your device only:</strong></p>
     <ul>
       <li>Name (optional) — used to personalize your experience</li>
-      <li>Body weight — used only to calculate your daily hydration goal</li>
+      <li>Body weight — used to calculate your daily hydration goal</li>
+      <li>Age — used to refine your hydration goal</li>
       <li>Fasting schedule preferences — used to adjust reminder timing</li>
       <li>Water intake logs — your daily drinking history</li>
+      <li>Language preference and app settings</li>
     </ul>
+
+    <p><strong>Information collected in our cloud database (Supabase):</strong></p>
+    <ul>
+      <li>Email address or phone number — <em>optional</em>, only if you choose to provide it</li>
+      <li>Name, body weight, age, language, and daily goal — synced when you save your profile</li>
+      <li>Device platform (iOS or Android)</li>
+      <li>An anonymous device identifier (randomly generated, not linked to your identity)</li>
+    </ul>
+
+    <div class="callout blue">
+      📧 <strong>Contact collection:</strong> After your first water log, Hydra may ask for your email or phone number. This is entirely optional. It allows us to identify you if you change devices, and may be used in the future to send important app updates. We will never use it for advertising.
+    </div>
 
     <p><strong>Information accessed automatically (not stored by us):</strong></p>
     <ul>
-      <li>Location (GPS) — used only to detect your city and fetch local weather/temperature for hydration recommendations</li>
-      <li>Apple Health / Google Health Connect data (steps, active calories, heart rate, workouts) — used only to personalize your hydration recommendations, if you choose to connect a health source in Settings</li>
+      <li>Location (GPS) — used only to fetch local weather and prayer times</li>
+      <li>Apple Health / Google Health Connect data (steps, active calories, heart rate, workouts) — used only to personalize hydration recommendations, if you connect a health source in Settings</li>
     </ul>
 
-    <div class="highlight-box">
-      <p>📍 <strong>Location data:</strong> We request your location only to fetch local weather conditions (temperature and humidity) which affect your hydration needs. Your coordinates are sent directly to OpenWeather and to the AlAdhan prayer-times API, and are not stored by us.</p>
+    <div class="callout">
+      📍 <strong>Location data:</strong> Your coordinates are sent directly to OpenWeather and the AlAdhan prayer-times API. They are not stored by us.
     </div>
 
-    <div class="highlight-box">
-      <p>❤️ <strong>Health data:</strong> If you choose to connect Apple Health or Google Health Connect, Hydra reads your steps, active calories, and heart rate to estimate fluid loss and suggest a personalized hydration goal. Hydra may also write your logged water intake back to Apple Health. This data is processed on your device only and is never transmitted to us or any third party.</p>
+    <div class="callout">
+      ❤️ <strong>Health data:</strong> If you connect Apple Health or Google Health Connect, Hydra reads steps, active calories, and heart rate to estimate fluid loss. Hydra may also write your water logs back to Apple Health. This data is processed on-device only and is never transmitted to us or any third party.
     </div>
 
-    <h2>3. How We Use Information</h2>
-    <ul>
-      <li>To calculate your personalized daily water goal</li>
-      <li>To send hydration reminders at appropriate times</li>
-      <li>To adjust your hydration plan during fasting periods (Ramadan / intermittent fasting)</li>
-      <li>To calculate accurate prayer times for your location</li>
-      <li>To display weather-based hydration alerts</li>
-      <li>To estimate fluid loss based on activity, if you connect a health data source</li>
-    </ul>
+    <h2>3. How We Use Your Information</h2>
+    <table>
+      <tr><th>Purpose</th><th>Data used</th></tr>
+      <tr><td>Calculate your personalized daily water goal</td><td>Weight, age, weather (temperature)</td></tr>
+      <tr><td>Send hydration and prayer time reminders</td><td>Prayer times (location-derived), language preference</td></tr>
+      <tr><td>Adjust reminders during fasting</td><td>Fasting mode preference, Fajr/Maghrib times</td></tr>
+      <tr><td>Display weather-based hydration alerts</td><td>GPS location → OpenWeather API</td></tr>
+      <tr><td>Estimate fluid loss from activity</td><td>Health data (if connected)</td></tr>
+      <tr><td>Identify you across devices</td><td>Email or phone number (optional, cloud-stored)</td></tr>
+      <tr><td>App analytics and improvement</td><td>Anonymous device ID, platform, language</td></tr>
+    </table>
 
     <h2>4. Data Storage & Security</h2>
-    <p>Hydra has no backend server and no user accounts. All your data — your profile, your weight, your water log, your settings — is stored exclusively on your device using local encrypted storage. We have no way to access it, because it never leaves your phone.</p>
+    <p>Your daily water logs, weight, fasting settings, and most app data are stored <strong>exclusively on your device</strong> using local encrypted storage (AsyncStorage).</p>
+    <p>Optionally provided contact information (email/phone), along with your name, weight, age, language, and goal, are stored in a <strong>secure cloud database</strong> (Supabase, hosted on AWS in the EU region) with the following protections:</p>
+    <ul>
+      <li>Encrypted in transit (TLS 1.2+)</li>
+      <li>Encrypted at rest (AES-256)</li>
+      <li>Access restricted by row-level security policies</li>
+      <li>Each user identified only by an anonymous device ID — not by name or email alone</li>
+    </ul>
 
     <h2>5. Data Sharing</h2>
-    <div class="green-box">
-      <p>✅ We do NOT sell, rent, or trade your personal data, because we do not collect or store it in the first place.</p>
+    <div class="callout">
+      ✅ We do <strong>NOT</strong> sell, rent, or trade your personal data.
     </div>
-    <p>Your device communicates directly with the following third-party services, strictly to provide app functionality:</p>
-    <ul>
-      <li><strong>OpenWeather API</strong> — receives your GPS coordinates to return local weather data</li>
-      <li><strong>AlAdhan API</strong> — receives your GPS coordinates to calculate accurate prayer times</li>
-      <li><strong>Apple Health / Google Health Connect</strong> — only if you choose to connect them in Settings</li>
-      <li><strong>Apple / Google</strong> — local notifications are scheduled through their operating systems</li>
-    </ul>
-    <p>None of these services receive your name, weight, or water intake history.</p>
+    <p>Your device communicates directly with the following third-party services:</p>
+    <table>
+      <tr><th>Service</th><th>Data shared</th><th>Purpose</th></tr>
+      <tr><td>OpenWeather API</td><td>GPS coordinates</td><td>Fetch local temperature/weather</td></tr>
+      <tr><td>AlAdhan API</td><td>GPS coordinates</td><td>Calculate accurate prayer times</td></tr>
+      <tr><td>Supabase (AWS EU)</td><td>Contact info, profile data (if provided)</td><td>Cloud profile storage</td></tr>
+      <tr><td>Apple Health</td><td>Water logs (written), health stats (read)</td><td>Health integration, if enabled</td></tr>
+      <tr><td>Google Health Connect</td><td>Health stats (read only)</td><td>Health integration, if enabled</td></tr>
+      <tr><td>Apple / Google OS</td><td>Notification content</td><td>Deliver local push notifications</td></tr>
+    </table>
+    <p>None of these services receive your water intake logs or your full usage history.</p>
 
-    <h2>6. Your Rights & Control</h2>
-    <p>Because all data lives on your device, you are always in full control:</p>
+    <h2>6. Data Retention</h2>
     <ul>
-      <li><strong>Access & Correction:</strong> View or edit your information anytime in Settings</li>
-      <li><strong>Deletion:</strong> Uninstalling the app permanently deletes all stored data</li>
-      <li><strong>Health data permissions:</strong> Disconnect Apple Health / Google Health Connect anytime from your phone's system Settings</li>
+      <li><strong>On-device data:</strong> Stored until you uninstall the app or reset it in Settings</li>
+      <li><strong>Cloud data (Supabase):</strong> Retained while your account is active. You can request deletion at any time by emailing us</li>
+    </ul>
+
+    <h2>7. Your Rights & Control</h2>
+    <ul>
+      <li><strong>Access & correction:</strong> View or edit your profile anytime in Settings</li>
+      <li><strong>Deletion:</strong> Uninstalling the app deletes all on-device data. To delete cloud data, email <a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a></li>
+      <li><strong>Health data:</strong> Disconnect Apple Health / Google Health Connect anytime from your phone's system Settings</li>
       <li><strong>Location:</strong> Disable location access anytime from your phone's Settings app</li>
+      <li><strong>Notifications:</strong> Disable anytime from your phone's Settings or within Hydra's Settings screen</li>
     </ul>
 
-    <h2>7. Children's Privacy</h2>
-    <p>Hydra is not directed at children under 13. We do not knowingly design Hydra to collect personal information from children under 13.</p>
+    <h2>8. Children's Privacy</h2>
+    <p>Hydra is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, contact us immediately.</p>
 
-    <h2>8. Push Notifications</h2>
-    <p>Hydra schedules local notifications on your device to remind you to drink water and to alert you ahead of prayer times. These are generated and delivered entirely on-device — they are not sent from a remote server. You can disable them anytime from your phone's Settings app or within Hydra's Settings screen.</p>
+    <h2>9. Push Notifications</h2>
+    <p>Hydra schedules local notifications on your device for hydration reminders and prayer time alerts. These are generated entirely on-device — they are not sent from a remote server. You can disable them anytime from your phone's Settings app or within Hydra's Settings screen.</p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>10. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Continued use of Hydra after changes constitutes acceptance of the updated policy. We recommend checking this page periodically.</p>
 
-    <h2>10. Applicable Law</h2>
-    <p>This Privacy Policy is governed by the laws of the Hashemite Kingdom of Jordan. For users in the European Union, we comply with GDPR principles. For users in Saudi Arabia, UAE, and other GCC countries, we aim to comply with applicable local data protection regulations.</p>
+    <h2>11. Applicable Law</h2>
+    <p>This Privacy Policy is governed by the laws of the Hashemite Kingdom of Jordan. For users in the European Union, we comply with GDPR principles, including the right to access, rectification, and erasure. For users in Saudi Arabia, UAE, and other GCC countries, we aim to comply with applicable local data protection regulations.</p>
 
-    <div class="contact-card">
-      <h3>📬 Contact Us</h3>
-      <p>Questions about your privacy? We respond within 48 hours.</p>
-      <p style="margin-top: 10px;"><a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a></p>
+    <div class="callout blue">
+      📬 <strong>Contact Us</strong><br/>
+      Questions about your privacy? We respond within 48 hours.<br/>
+      <a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a>
     </div>
-
   </div>
 
-  <!-- ═══ ARABIC ════════════════════════════════════════ -->
-  <div id="section-ar" class="section rtl">
+  <hr class="divider" />
 
-    <div class="last-updated" style="text-align:right;">📅 آخر تحديث: يونيو 2026 · تاريخ السريان: يونيو 2026</div>
+  <!-- ═══════════════════════════════════════════ ARABIC ════ -->
+  <div class="section-ar" id="arabic">
+    <p class="badge">📅 آخر تحديث: يوليو 2026 · تاريخ السريان: يوليو 2026</p>
 
-    <div class="green-box">
-      <p>✅ <strong>باختصار:</strong> يخزّن تطبيق Hydra بياناتك على جهازك فقط. لا يوجد لدينا حسابات مستخدمين، ولا خوادم تخزّن بياناتك الشخصية، ولا نبيع أو نشارك بياناتك مع المعلنين أبداً.</p>
+    <div class="callout">
+      ✅ <strong>باختصار:</strong> يعالج تطبيق Hydra بياناتك محلياً على جهازك. كما نجمع معلومات تواصل اختيارية (بريد إلكتروني أو رقم هاتف) في قاعدة بيانات سحابية آمنة فقط لتعريفك عبر الأجهزة. لا نبيع أو نشارك بياناتك الشخصية مع المعلنين أبداً.
     </div>
 
     <h2>١. من نحن</h2>
-    <p>Hydra هو تطبيق لتتبع الترطيب مصمم للمستخدمين الناطقين بالعربية. توضح سياسة الخصوصية هذه ما هي المعلومات التي يصل إليها التطبيق وكيفية استخدامها.</p>
-    <p>للتواصل معنا: <strong>obadah.mheidat@gmail.com</strong></p>
+    <p>Hydra هو تطبيق لتتبع الترطيب مصمم للمستخدمين الناطقين بالعربية. توضح سياسة الخصوصية هذه المعلومات التي يصل إليها التطبيق وكيفية استخدامها.</p>
+    <p>للتواصل: <a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a></p>
 
-    <h2>٢. المعلومات التي نصل إليها</h2>
-    <p>لا يتطلب Hydra إنشاء حساب ولا يجمع أي معلومات على خوادم بعيدة. تبقى جميع المعلومات على جهازك فقط.</p>
+    <h2>٢. المعلومات التي نجمعها</h2>
 
-    <p><strong>المعلومات التي تقدمها (مخزّنة على جهازك فقط):</strong></p>
+    <p><strong>معلومات مخزّنة على جهازك فقط:</strong></p>
     <ul>
-      <li>الاسم (اختياري) — يُستخدم لتخصيص تجربتك</li>
-      <li>الوزن — يُستخدم فقط لحساب هدفك اليومي للترطيب</li>
-      <li>تفضيلات جدول الصيام — تُستخدم لضبط توقيت التذكيرات</li>
-      <li>سجل شرب الماء — سجل شربك اليومي</li>
+      <li>الاسم (اختياري) — لتخصيص تجربتك</li>
+      <li>الوزن — لحساب هدفك اليومي من الماء</li>
+      <li>العمر — لتحسين حساب هدفك</li>
+      <li>تفضيلات وضع الصيام — لضبط توقيت التذكيرات</li>
+      <li>سجل شرب الماء اليومي</li>
+      <li>تفضيل اللغة وإعدادات التطبيق</li>
     </ul>
 
-    <p><strong>المعلومات التي يصل إليها التطبيق تلقائياً (لا نخزّنها):</strong></p>
+    <p><strong>معلومات مخزّنة في قاعدة بياناتنا السحابية (Supabase):</strong></p>
     <ul>
-      <li>الموقع (GPS) — يُستخدم فقط للكشف عن مدينتك وجلب بيانات الطقس المحلية لتوصيات الترطيب</li>
-      <li>بيانات Apple Health أو Google Health Connect (الخطوات، السعرات النشطة، نبضات القلب، التمارين) — تُستخدم فقط لتخصيص توصيات الترطيب، في حال اخترت ربط مصدر بيانات صحية من الإعدادات</li>
+      <li>البريد الإلكتروني أو رقم الهاتف — <em>اختياري</em>، فقط إذا اخترت تقديمه</li>
+      <li>الاسم، الوزن، العمر، اللغة، الهدف اليومي — يُزامَن عند حفظ ملفك الشخصي</li>
+      <li>نظام التشغيل (iOS أو Android)</li>
+      <li>معرّف جهاز مجهول (مولّد عشوائياً، غير مرتبط بهويتك)</li>
     </ul>
 
-    <div class="highlight-box">
-      <p>📍 <strong>بيانات الموقع:</strong> نطلب موقعك فقط لجلب الظروف الجوية المحلية (درجة الحرارة والرطوبة) وأوقات الصلاة الدقيقة. تُرسل إحداثياتك مباشرة إلى OpenWeather وإلى واجهة AlAdhan لأوقات الصلاة، ولا نقوم بتخزينها.</p>
+    <div class="callout blue">
+      📧 <strong>جمع معلومات التواصل:</strong> بعد أول تسجيل للماء، قد يطلب منك Hydra بريدك الإلكتروني أو رقم هاتفك. هذا اختياري تماماً. يتيح لنا التعرف عليك عند تغيير جهازك، وقد يُستخدم مستقبلاً لإرسال تحديثات مهمة للتطبيق. لن نستخدمه للإعلانات أبداً.
     </div>
 
-    <div class="highlight-box">
-      <p>❤️ <strong>البيانات الصحية:</strong> إذا اخترت ربط Apple Health أو Google Health Connect، يقرأ Hydra خطواتك وسعراتك النشطة ونبضات قلبك لتقدير فقدان السوائل واقتراح هدف ترطيب شخصي. قد يكتب Hydra أيضاً كمية الماء المسجّلة إلى Apple Health. تتم معالجة هذه البيانات على جهازك فقط ولا تُرسل إلينا أو لأي طرف ثالث أبداً.</p>
+    <p><strong>معلومات يصل إليها التطبيق تلقائياً (لا نخزّنها):</strong></p>
+    <ul>
+      <li>الموقع (GPS) — لجلب بيانات الطقس وأوقات الصلاة فقط</li>
+      <li>بيانات Apple Health أو Google Health Connect — لتخصيص توصيات الترطيب، إن اخترت ذلك</li>
+    </ul>
+
+    <div class="callout">
+      📍 <strong>بيانات الموقع:</strong> تُرسل إحداثياتك مباشرة إلى OpenWeather وAlAdhan. نحن لا نخزّنها.
     </div>
 
-    <h2>٣. كيف نستخدم المعلومات</h2>
-    <ul>
-      <li>لحساب هدفك اليومي المخصص من الماء</li>
-      <li>لإرسال تذكيرات الترطيب في الأوقات المناسبة</li>
-      <li>لضبط خطة الترطيب خلال فترات الصيام (رمضان / الصيام المتقطع)</li>
-      <li>لحساب أوقات الصلاة الدقيقة لموقعك</li>
-      <li>لعرض تنبيهات الترطيب بناءً على الطقس</li>
-      <li>لتقدير فقدان السوائل بناءً على نشاطك، في حال ربط مصدر بيانات صحية</li>
-    </ul>
+    <div class="callout">
+      ❤️ <strong>البيانات الصحية:</strong> تتم معالجتها على جهازك فقط ولا تُرسل إلينا أو لأي طرف ثالث.
+    </div>
+
+    <h2>٣. كيف نستخدم معلوماتك</h2>
+    <table>
+      <tr><th>الغرض</th><th>البيانات المستخدمة</th></tr>
+      <tr><td>حساب هدفك اليومي المخصص</td><td>الوزن، العمر، درجة الحرارة</td></tr>
+      <tr><td>إرسال تذكيرات الترطيب وأوقات الصلاة</td><td>أوقات الصلاة، تفضيل اللغة</td></tr>
+      <tr><td>ضبط التذكيرات خلال الصيام</td><td>وضع الصيام، أوقات الفجر والمغرب</td></tr>
+      <tr><td>عرض تنبيهات الطقس</td><td>الموقع ← OpenWeather API</td></tr>
+      <tr><td>تقدير فقدان السوائل</td><td>البيانات الصحية (إن تم الربط)</td></tr>
+      <tr><td>التعرف عليك عبر الأجهزة</td><td>البريد أو الهاتف (اختياري)</td></tr>
+      <tr><td>تحسين التطبيق</td><td>معرّف جهاز مجهول، النظام، اللغة</td></tr>
+    </table>
 
     <h2>٤. تخزين البيانات وأمانها</h2>
-    <p>لا يملك Hydra خادماً خلفياً ولا حسابات مستخدمين. تُخزَّن جميع بياناتك — ملفك الشخصي، وزنك، سجل شربك، إعداداتك — حصرياً على جهازك باستخدام تخزين محلي مشفّر. لا نملك أي وسيلة للوصول إليها لأنها لا تغادر هاتفك أبداً.</p>
+    <p>تُخزَّن بيانات سجل الماء والوزن والصيام وإعدادات التطبيق <strong>حصرياً على جهازك</strong> في تخزين محلي مشفّر.</p>
+    <p>معلومات التواصل الاختيارية (البريد/الهاتف) مع الاسم والوزن والعمر واللغة والهدف تُخزَّن في <strong>قاعدة بيانات سحابية آمنة</strong> (Supabase، مستضافة على AWS في منطقة الاتحاد الأوروبي) مع الحمايات التالية:</p>
+    <ul>
+      <li>مشفّرة أثناء النقل (TLS 1.2+)</li>
+      <li>مشفّرة في وضع السكون (AES-256)</li>
+      <li>محمية بسياسات أمان على مستوى الصف</li>
+      <li>كل مستخدم مُعرَّف بمعرّف جهاز مجهول فقط</li>
+    </ul>
 
     <h2>٥. مشاركة البيانات</h2>
-    <div class="green-box">
-      <p>✅ نحن لا نبيع أو نؤجر أو نتاجر ببياناتك الشخصية، لأننا لا نجمعها أو نخزّنها أصلاً.</p>
+    <div class="callout">
+      ✅ نحن لا <strong>نبيع أو نؤجر أو نتاجر</strong> ببياناتك الشخصية.
     </div>
-    <p>يتواصل جهازك مباشرة مع الخدمات التالية، وذلك حصراً لتشغيل ميزات التطبيق:</p>
-    <ul>
-      <li><strong>OpenWeather API</strong> — يستقبل إحداثياتك GPS لإعادة بيانات الطقس المحلية</li>
-      <li><strong>AlAdhan API</strong> — يستقبل إحداثياتك GPS لحساب أوقات الصلاة الدقيقة</li>
-      <li><strong>Apple Health / Google Health Connect</strong> — فقط إذا اخترت ربطها من الإعدادات</li>
-      <li><strong>Apple / Google</strong> — يتم جدولة الإشعارات المحلية عبر أنظمة التشغيل الخاصة بهم</li>
-    </ul>
-    <p>لا تستقبل أي من هذه الخدمات اسمك أو وزنك أو سجل شربك للماء.</p>
+    <table>
+      <tr><th>الخدمة</th><th>البيانات المشاركة</th><th>الغرض</th></tr>
+      <tr><td>OpenWeather API</td><td>إحداثيات GPS</td><td>بيانات الطقس المحلية</td></tr>
+      <tr><td>AlAdhan API</td><td>إحداثيات GPS</td><td>أوقات الصلاة</td></tr>
+      <tr><td>Supabase (AWS EU)</td><td>معلومات التواصل وبيانات الملف الشخصي (إن قُدّمت)</td><td>تخزين الملف السحابي</td></tr>
+      <tr><td>Apple Health</td><td>سجلات الماء (كتابة)، بيانات صحية (قراءة)</td><td>التكامل الصحي، إن فُعّل</td></tr>
+      <tr><td>Google Health Connect</td><td>بيانات صحية (قراءة فقط)</td><td>التكامل الصحي، إن فُعّل</td></tr>
+      <tr><td>Apple / Google</td><td>محتوى الإشعارات</td><td>إرسال الإشعارات المحلية</td></tr>
+    </table>
 
-    <h2>٦. حقوقك وتحكمك</h2>
-    <p>بما أن جميع البيانات تعيش على جهازك، أنت دائماً في السيطرة الكاملة:</p>
+    <h2>٦. الاحتفاظ بالبيانات</h2>
     <ul>
-      <li><strong>الوصول والتصحيح:</strong> اعرض أو عدّل معلوماتك في أي وقت من الإعدادات</li>
-      <li><strong>الحذف:</strong> حذف التطبيق يحذف جميع البيانات المخزّنة نهائياً</li>
-      <li><strong>أذونات البيانات الصحية:</strong> اقطع الاتصال بـ Apple Health أو Google Health Connect في أي وقت من إعدادات هاتفك</li>
-      <li><strong>الموقع:</strong> عطّل الوصول إلى الموقع في أي وقت من إعدادات هاتفك</li>
+      <li><strong>البيانات المحلية:</strong> تُخزَّن حتى تحذف التطبيق أو تعيد ضبطه</li>
+      <li><strong>البيانات السحابية:</strong> محتفظ بها طوال فترة نشاط حسابك. يمكنك طلب الحذف في أي وقت عبر البريد الإلكتروني</li>
     </ul>
 
-    <h2>٧. خصوصية الأطفال</h2>
-    <p>تطبيق Hydra غير موجه للأطفال دون سن 13 عاماً، ولم يُصمَّم لجمع معلومات شخصية منهم عن قصد.</p>
+    <h2>٧. حقوقك وتحكمك</h2>
+    <ul>
+      <li><strong>الوصول والتصحيح:</strong> عدّل ملفك في أي وقت من الإعدادات</li>
+      <li><strong>الحذف:</strong> حذف التطبيق يحذف البيانات المحلية. لحذف البيانات السحابية راسلنا على <a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a></li>
+      <li><strong>البيانات الصحية:</strong> اقطع الاتصال في أي وقت من إعدادات هاتفك</li>
+      <li><strong>الموقع:</strong> عطّل الوصول من إعدادات هاتفك</li>
+      <li><strong>الإشعارات:</strong> عطّلها من إعدادات هاتفك أو من شاشة إعدادات Hydra</li>
+    </ul>
 
-    <h2>٨. الإشعارات الفورية</h2>
-    <p>يقوم Hydra بجدولة إشعارات محلية على جهازك لتذكيرك بشرب الماء وتنبيهك قبل أوقات الصلاة. يتم إنشاء هذه الإشعارات وتسليمها بالكامل على جهازك — ولا تُرسل من أي خادم بعيد. يمكنك تعطيلها في أي وقت من إعدادات هاتفك أو من شاشة إعدادات Hydra.</p>
+    <h2>٨. خصوصية الأطفال</h2>
+    <p>تطبيق Hydra غير موجه للأطفال دون 13 عاماً. إن علمت بأن طفلاً قدّم لنا معلومات شخصية، تواصل معنا فوراً.</p>
 
-    <h2>٩. التغييرات على هذه السياسة</h2>
-    <p>قد نحدّث سياسة الخصوصية هذه من وقت لآخر. الاستمرار في استخدام Hydra بعد التغييرات يعني قبولك للسياسة المحدثة. نوصي بمراجعة هذه الصفحة بشكل دوري.</p>
+    <h2>٩. الإشعارات الفورية</h2>
+    <p>يقوم Hydra بجدولة إشعارات محلية على جهازك للتذكير بشرب الماء وأوقات الصلاة. تتم جدولتها وتسليمها بالكامل على جهازك — ولا تُرسل من أي خادم بعيد.</p>
 
-    <h2>١٠. القانون المطبق</h2>
-    <p>تخضع سياسة الخصوصية هذه لقوانين المملكة الأردنية الهاشمية. للمستخدمين في الاتحاد الأوروبي، نلتزم بمبادئ GDPR. للمستخدمين في المملكة العربية السعودية والإمارات ودول الخليج الأخرى، نسعى للالتزام بأنظمة حماية البيانات المحلية المعمول بها.</p>
+    <h2>١٠. التغييرات على هذه السياسة</h2>
+    <p>قد نحدّث سياسة الخصوصية من وقت لآخر. الاستمرار في الاستخدام يعني قبولك للسياسة المحدثة.</p>
 
-    <div class="contact-card">
-      <h3>📬 تواصل معنا</h3>
-      <p>أسئلة حول خصوصيتك؟ نرد خلال 48 ساعة.</p>
-      <p style="margin-top: 10px;"><a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a></p>
+    <h2>١١. القانون المطبق</h2>
+    <p>تخضع هذه السياسة لقوانين المملكة الأردنية الهاشمية. نلتزم بمبادئ GDPR للمستخدمين في الاتحاد الأوروبي، ونسعى للالتزام بأنظمة حماية البيانات لدول الخليج.</p>
+
+    <div class="callout blue">
+      📬 <strong>تواصل معنا</strong><br/>
+      أسئلة حول خصوصيتك؟ نرد خلال 48 ساعة.<br/>
+      <a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a>
     </div>
-
   </div>
 
+  <footer>
+    <p>© 2026 Hydra · Built with 💧 for the Arab World · <a href="mailto:obadah.mheidat@gmail.com">obadah.mheidat@gmail.com</a></p>
+  </footer>
 </div>
-
-<footer>
-  © 2026 Hydra · Built with 💧 for the Arab World · <a href="mailto:obadah.mheidat@gmail.com" style="color: #4d7ea8; text-decoration:none;">obadah.mheidat@gmail.com</a>
-</footer>
-
-<script>
-  function switchLang(lang) {
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'))
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'))
-    document.getElementById('section-' + lang).classList.add('active')
-    event.currentTarget.classList.add('active')
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
-  }
-</script>
 </body>
 </html>
